@@ -1,0 +1,209 @@
+<!DOCTYPE Html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+            .font-roboto {
+                font-family: 'Roboto Flex';
+            }
+            body{
+                max-width: 100%;
+            }
+            /* Niestandardowe style */
+            .font-size-1vw { font-size: 1vw; }
+            .h-6vw { height: 3vw; }
+            .bg-custom-blue { background-color: #0147FF; }
+            .font-600 { font-weight: 600; }
+            .font-roboto { font-family: 'Roboto Flex', sans-serif; }
+            .bg-custom-blue { background-color: #0147FF; }
+            .text-1vw { font-size: 1vw; }
+            .text-16vw { font-size: 1.6vw;}
+            .height-6vh { height: 6vh; }
+            .pt-custom { padding-top: 8%; }
+            .w-custom{ width: 85%; }
+            .font-bebas{ font-family: 'Bebas Neue'; }
+            .margin-75{ margin-left: 7.5%; }
+            .ml-5p { margin-left: -20%; }
+            .height-6vh { height: 6vh; }
+            .width-20vh { width: 70%; }
+            .border-custom-blue { border: 1px solid #0147FF; }
+            .bg-white-custom { background-color: white; }
+            .text-custom-blue { color: #0147FF; }
+            .mt-n5p { margin-top: -5%; }
+            .w-70p { width: 70%; }
+            .ml-30p { margin-left: 30%; }
+            .mt-custom { margin-top: -23%; } 
+            .ml-custom { margin-left: 64.9%; } 
+            .z-neg-99 { z-index: -99; } 
+            .mt-n27 { margin-top: -26.5%; } 
+            .left-30p { left: 30%; }
+            .text-responsive { font-size: 1.5vw; }
+            .text-size-2-7vw{ font-size: 2.7vw; }
+            .w-20p{ width: 80%;}
+            .text-size-1-1vw { font-size: 1.1vw; }
+            .letter-spacing-negative-2 { letter-spacing: -2%; }
+            .text-underline-offset-5 { text-underline-offset: 5px; }
+            .padding-right-3 { padding-right: 3%; }
+            .color-custom { color: #0147FF; }
+            .w-80{ width: 80%;}
+            .margin-left-8 { margin-left: 8%; }
+            .width-5 { width: 5%; }
+            .text-size-4vw { font-size: 4vw; }
+            .color-ededed { color: #EDEDED; }
+            .bg-dark {background-color: #282828; }
+            .border-bottom-white { border-bottom: 3px solid white; }
+            .width-85{ width: 85%;} 
+            .width-80{ width: 80%; }
+            .font-08vw{ font-size: 0.8vw; }
+            .margin-left-60{ margin-left: 60%; }
+            .m-top{margin-top: 35%;}
+            .ml-40p{left: 45%;}
+            .mt-n10{top: 0%;}
+            .z-3{zoom:3;}
+            .h-700px{height: 720px;}
+            .z-neg-100{z-index:-100;}
+            /* Media Queries - wersja mobilna */
+            @media (max-width: 768px) {
+                body{background-size: 0;}
+                .menu-button-mobile{scale: 2; margin-top: 18%;}
+                .text-7xl{ font-size: 7vw; width: 80%;}
+                .text-size-1vw{font-size: 1vw;}
+                .ml-24{margin-left: 10%;}
+                .font-size-1vw{font-size: 3vw; margin-right: 90% !important; margin-left: 50% !important;}
+                .mobile-margin{margin-left: -3%;}
+                .text-lg{ font-size: 4vw; width: 90%; }
+                .img-mobile{height: auto; width: 100% ; margin-top: 10%;}
+                .button-contact-margin-mobile{margin-left: 40%;}
+                .button-contact-margin-mobile-click{scale: 4; width: 3vh !important; font-size: 1vw; height: auto; position: absolute; margin-left: 6% !important; display: block;}
+                .button-contact-margin-mobile-click2{scale: 4; width: 3vh !important; font-size: 1vw; height: auto; position: absolute; margin-left: -17% !important; margin-top: 15%; display: block;}
+                .seo{display: block !important; float: none !important; margin-left: auto !important; margin-right: auto !important; margin-bottom: 10%; width: 90%;}
+                .seo-title{font-size: 120%;}
+                .seo-text{font-size: 80%;}
+                .seo-show{font-size: 80%;}
+                .footer-mobile{font-size: 80%; width: 200% !important;}
+                .gallery-text{zoom: 3; margin-top: 50%;}
+                .cars-mobile{margin-top: -15%;}
+                .black-mobile{margin-top: -30%; width: 200%;}
+                .image-mobile{width: 80%; margin-right: 3% !important; margin-top: -10%; overflow: hidden;}
+                .dots-mobile{scale: 3;}
+                .h-700px{display: none;}
+            }
+            
+        </style>
+    </head>
+    <body class="m-0 p-0 overflow-x-hidden">
+        <div class="w-full pt-4 pb-4 m-0 p-0">
+            <div class="w-10/12 mx-auto flex">
+                <div class="w-3/12">
+                    <img src="logo.png" class="w-1/2 img-mobile"/>
+                </div>
+                <div class="flex w-1/6 mx-auto font-roboto font-normal text-center mobile-margin">
+                    <div class="font-size-1vw tracking-tight whitespace-nowrap gap-2 text-center leading-9 w-1/2 cursor-pointer">
+                        Galeria zdjęć
+                    </div>
+                    <div class="font-size-1vw tracking-tight whitespace-nowrap gap-2 text-center leading-9 w-1/2 cursor-pointer">
+                        FaQ
+                    </div>
+                </div>
+                <div class="flex w-1/4 relative">
+                        <button class="menu-button-mobile w-1/2 tracking-tight absolute left-2/3 transform -translate-x-1/2 text-1vw h-6vw bg-custom-blue text-white font-600 rounded-lg border-none cursor-pointer">Zadzwoń do nas</button>
+                </div>
+            </div>
+        </div>
+        <div class="w-full">
+            <div class="pt-custom font-normal w-custom mx-auto">
+                <div class="font-bebas text-7xl w-1/2">
+                    Sprzedajemy samochody<br /> z Europy
+                </div>
+                <div class="font-roboto text-lg w-1/3 pt-10">
+                    Kup komfortowy pojazd, aby każda podróż<br/> była wyjątkowym przeżyciem.
+                </div>
+            </div>
+            <div class="flex margin-75 w-1/3 mt-8 contact-margin-mobile">
+                <div class="flex w-1/2">
+                    <button class="w-1/2 button-contact-margin-mobile-click height-6vh width-20vh font-size-1vw bg-custom-blue text-white font-roboto font-bold rounded-lg border-none cursor-pointer">Zobacz zdjęcia</button>
+                </div>
+                <div class="flex w-1/2 button-contact-margin-mobile">
+                    <button class="ml-5p button-contact-margin-mobile-click2 text-1vw h-6vh width-20vh border border-custom-blue bg-white-custom text-custom-blue rounded-lg font-roboto font-semibold cursor-pointer">Zadzwoń do nas</button>
+                </div>
+            </div>
+            
+        <div class="absolute right-0 z-3">
+            
+            <div class="mt-n5p w-70p ml-30p right-0">
+                <img src="cars.png" class="w-1/1">
+            </div>
+            <div class="absolute mt-custom ml-custom z-neg-99">
+                <img src="window.png">
+            </div>    
+            <div class="relative w-70p mt-n27 left-30p z-neg-99 overflow-x-hidden">
+                <img src="shadow.png" class="w-1/1">
+            </div>
+        </div>
+        <div class="absolute ml-40p mt-n10 right-0 z-neg-100">
+                <img src="element.png" class="h-700px ">
+            </div>
+        </div>
+        <div class="w-1/1 m-top gallery-text">
+            <div class="mx-auto w-custom">
+                <div class="w-1/3">
+                    <p class="text-custom-blue text-responsive font-roboto font-normal mb-5">Prezentacja firmy</p>
+                    <div class="font-normal font-bebas text-size-2-7vw mt-negative-5 black-mobile">
+                        ZOBACZ NASZĄ GALERIĘ ZDJĘĆ
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto w-custom pt-8 cars-mobile">
+                <div class="flex float-left font-semibold font-roboto text-size-1-1vw letter-spacing-negative-2 text-underline-offset-5 padding-right-3 text-custom-blue underline">
+                    Samochody osobowe
+                </div>
+                <p class="flex font-semibold font-roboto text-size-1-1vw letter-spacing-negative-2 padding-right-3 text-underline-offset-5">Samochody dostawcze</p>
+            </div>
+        </div>
+        <div class="mt-32 w-1/1">
+            <div class="margin-left-8 w-80 flex overflow-x-visible">
+                <img class="w-20p flex mr-20 image-mobile" src="car1.png">
+                <img class="w-20p flex mr-20 image-mobile" src="car2.png">
+                <img class="w-20p flex mr-20 image-mobile" src="car3.png">
+            </div>
+            <div class="flex text-center mx-auto width-5 text-size-4vw color-ededed dots-mobile">
+                <div class="text-custom-blue">.</div>
+                ....
+            </div>
+        </div>
+        <div class="w-full mt-10 bg-dark border-bottom-white">
+            <div class="flex mx-auto width-85 padding-top-5 padding-bottom-5 py-16 seo">
+                <div class="float-left w-1/2 seo">
+                    <p class="text-white font-bebas font-normal text-16vw seo-title">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</p>
+                    <div class="width-80 mt-8">
+                        <p class="font-08vw font-normal font-roboto text-white seo-text">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</p>
+                        <button class="show underline border-none cursor-pointer text-white font-normal mt-6 bg-dark text-underline-offset-5 font-roboto font-08vw seo-show">Rozwiń ↓</button>
+                    </div>
+                </div>
+                <div class="float-left w-1/2 seo">
+                    <p class="text-white font-bebas font-normal text-16vw seo-title">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</p>
+                    <div class="width-80 mt-8">
+                        <p class="font-08vw font-normal font-roboto text-white seo-text">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</p>
+                    <button class="show underline border-none cursor-pointer text-white font-normal mt-6 bg-dark text-underline-offset-5 font-roboto font-08vw seo-show">Rozwiń ↓</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="flex w-full bg-dark">
+            <div class="w-1/2 flex text-white font-bold py-10 ml-24 font-roboto text-size-1vw footer-mobile">
+                Cars spot
+            </div>
+            <div class="w-1/2 underline text-white font-normal py-10 margin-left-60 font-light text-size-1vw footer-mobile">
+                Polityka prywatności
+            </div>
+        </div>
+    </body>
+</html>
